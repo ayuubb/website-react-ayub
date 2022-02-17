@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 480px;
+  margin: auto;
+}
+.app {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  background-color: blueviolet;
+  width: 100%;
+}
+
+.value__counter {
+  padding: 6px;
+  background-color: brown;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.basket {
+  position: relative;
+}
+
+main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid blueviolet;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}

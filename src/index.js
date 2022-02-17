@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Home from './container/Home/Home';
+// import Home from './container/Home/Home';
+import Product from './container/Product/Product';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<Product />, document.getElementById('root'));
 
 reportWebVitals();
