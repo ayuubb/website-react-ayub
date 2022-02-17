@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Sayur from '../../assets/sayur.jpg';
-import 'boxicons';
 import './Product.css';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import { BiBasket } from 'react-icons/bi';
 
 class Product extends Component {
   state = {
@@ -23,12 +24,12 @@ class Product extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="wrapper">
         <div className="app">
           <div className="navbar">
             <h2>Toko</h2>
             <div className="basket">
-              <box-icon size="md" name="basket"></box-icon>
+              <BiBasket size={32} />
               <div className="value__counter">{this.state.order}</div>
             </div>
           </div>
@@ -36,11 +37,11 @@ class Product extends Component {
             <img src={Sayur} alt="sayur" />
             <div className="counter">
               <button className="minus" onClick={this.handleMinus}>
-                <box-icon name="checkbox-minus"></box-icon>
+                <AiOutlineArrowLeft />
               </button>
               <input type="text" value={this.state.order} />
               <button className="plus" onClick={this.handlePlus}>
-                <box-icon name="plus-circle"></box-icon>
+                <AiOutlineArrowRight />
               </button>
             </div>
           </main>
